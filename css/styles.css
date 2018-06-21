@@ -1,12 +1,13 @@
+
 * {
     box-sizing: border-box;
 }
 html {
    color: rgb(41, 40, 40);
    font-family: Helvetica, Arial, sans-serif;
-   -ms-text-size-adjust: 100%;
+   /*-ms-text-size-adjust: 100%;
    -webkit-text-size-adjust: 100%;
-   -moz-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;*/
 }
 body {
     margin: 0;
@@ -51,64 +52,78 @@ ul#second li:nth-child(1) a:hover, ul#second li:nth-child(2) a:hover, ul#second 
 ul#first li:nth-child(1) a {
     background-color: red;
     margin: 0 0 15px;
-    opacity: 0.3;
-    animation: rouge 11s;
-    animation-delay: 8s;
+    opacity: 0.2;
+    animation: rouge 16s infinite;
 }
 @keyframes rouge {
-    0%, 98% {opacity: 1;}
-    100% {opacity: 0.3;}
+    0%, 34% {opacity: 0.2;}
+    35%, 100% {opacity: 1;}
 }
 ul#first li:nth-child(2) a {
     background-color: yellow;
     margin: 0 0 15px;
-    opacity: 0.3;
-    animation: jaune 3s;
-    animation-delay: 5s;
+    opacity: 0.2;
+    animation: jaune 16s linear infinite;
 }
 @keyframes jaune {
-    10%, 30%, 50%, 70%, 90%, 100% {opacity: 0;}
-    0%, 20%, 40%, 60%, 80%, 98% {opacity: 1;}
+    0%, 17% {opacity: 0.2;}
+    18% {opacity: 1;}
+    19%, 21% {opacity: 0.2;}
+    22%, 24% {opacity: 1;}
+    25%, 27% {opacity: 0.2;}
+    28%, 30% {opacity: 1;}
+    31%, 33% {opacity: 0.2;}
+    34%, 100% {opacity: 0.2;}
 }
 ul#first li:nth-child(3) a {
     background-color: rgb(3, 235, 3);
-    opacity: 0.3;
-    animation: vert 5s;
+    opacity: 0.2;
+    animation: vert 16s linear infinite;
 }
 @keyframes vert {
-    0%, 98% {opacity: 1;}
-    100% {opacity: 0.3;}
+    0% {opacity: 1;}
+    10%, 16% {opacity: 1;}
+    17% {opacity: 0.2;}
+    100% {opacity: 0.2;}
 }
+
 ul#second li:nth-child(1) a {
     background-color: red;
     margin: 0 0 15px;
-    opacity: 0.3;
-    animation: rouges 9s;
+    opacity: 0.2;
+    animation: rouges 16s linear infinite;
 }
 @keyframes rouges {
-    0%, 98% {opacity: 1;}
-    100% {opacity: 0.3;}
+    0%, 39% {opacity: 1;}
+    40%, 73% {opacity: 0.2;}
+    74%, 100% {opacity: 1;}
 }
 ul#second li:nth-child(2) a {
     background-color: yellow;
     margin: 0 0 15px;
-    opacity: 0.3;
-    animation: jaunes 3s;
-    animation-delay: 12s;
+    opacity: 0.2;
+    animation: jaunes 16s linear infinite;
 }
 @keyframes jaunes {
-    10%, 30%, 50%, 70%, 90%, 100% {opacity: 0;}
-    0%, 20%, 40%, 60%, 80%, 98% {opacity: 1;}
+    0%, 52% {opacity: 0.2;}
+    53% {opacity: 1;}
+    54%, 56% {opacity: 0.2;}
+    57%, 59% {opacity: 1;}
+    60%, 62% {opacity: 0.2;}
+    63%, 65% {opacity: 1;}
+    67%, 69% {opacity: 0.2;}
+    70%, 72% {opacity: 1;}
+    73%, 100% {opacity: 0.2;}
 }
 ul#second li:nth-child(3) a {
     background-color:rgb(3, 235, 3);
-    opacity: 0.3;
-    animation: verts 5s;
-    animation-delay: 9s;
+    opacity: 0.2;
+    animation: verts 16s linear infinite;
 }
 @keyframes verts {
-    0%, 98% {opacity: 1;}
-    100% {opacity: 0.3;}
+    0%, 39% {opacity: 0.2;}
+    40%, 51% {opacity: 1;}
+    52%, 100% {opacity: 0.2;}
 }
 .pied {
     position: relative;
